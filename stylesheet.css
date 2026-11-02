@@ -1,0 +1,50 @@
+/* 4ever Quick Panel - shapes that do not depend on the accent color */
+
+.fqp-header {
+  spacing: 8px;
+  padding-bottom: 10px;
+}
+
+.fqp-footer {
+  spacing: 8px;
+  padding-top: 10px;
+}
+
+.fqp-pill {
+  border-radius: 99px;
+  padding: 5px 14px 5px 5px;
+  spacing: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.fqp-pill:hover,
+.fqp-pill:focus {
+  background-color: rgba(255, 255, 255, 0.17);
+}
+
+.fqp-pill-date {
+  padding: 8px 16px;
+}
+
+.fqp-avatar {
+  padding: 6px;
+  border-radius: 99px;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.fqp-pill-label {
+  font-size: 12px;
+}
+
+.fqp-light .fqp-pill {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.fqp-light .fqp-pill:hover,
+.fqp-light .fqp-pill:focus {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.fqp-light .fqp-avatar {
+  background-color: rgba(0, 0, 0, 0.1);
+}

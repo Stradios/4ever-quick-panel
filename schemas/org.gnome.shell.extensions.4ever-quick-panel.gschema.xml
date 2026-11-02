@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="4ever-quick-panel">
+  <schema id="org.gnome.shell.extensions.4ever-quick-panel" path="/org/gnome/shell/extensions/4ever-quick-panel/">
+    <key name="accent-color" type="s">
+      <default>'#ff5722'</default>
+      <summary>Accent color (hex, like #ff5722)</summary>
+    </key>
+    <key name="opacity" type="i">
+      <range min="0" max="100"/>
+      <default>97</default>
+      <summary>Panel opacity in percent</summary>
+    </key>
+    <key name="corner-radius" type="i">
+      <range min="8" max="40"/>
+      <default>24</default>
+      <summary>Panel corner radius in pixels</summary>
+    </key>
+    <key name="columns" type="i">
+      <range min="2" max="3"/>
+      <default>2</default>
+      <summary>Tiles per row (3 is experimental)</summary>
+    </key>
+    <key name="show-header" type="b">
+      <default>true</default>
+      <summary>Show your name and picture at the top</summary>
+    </key>
+    <key name="show-footer" type="b">
+      <default>true</default>
+      <summary>Show the date and time at the bottom</summary>
+    </key>
+    <key name="known-items" type="as">
+      <default>[]</default>
+      <summary>Tiles and sliders found in the panel (written by the extension)</summary>
+    </key>
+    <key name="hidden-items" type="as">
+      <default>[]</default>
+      <summary>Tiles and sliders to hide</summary>
+    </key>
+  </schema>
+</schemalist>

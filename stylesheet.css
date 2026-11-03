@@ -1,13 +1,14 @@
-/* 4ever Quick Panel - shapes that do not depend on the accent color */
+/* 4ever Quick Panel - shapes that do not depend on the accent color.
+   Sizes use em so they follow the text size setting. */
 
 .fqp-header {
   spacing: 8px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 
 .fqp-footer {
   spacing: 8px;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 .fqp-pill {
@@ -33,18 +34,190 @@
 }
 
 .fqp-pill-label {
-  font-size: 12px;
+  font-size: 0.95em;
 }
 
-.fqp-light .fqp-pill {
+.fqp-heading {
+  font-weight: bold;
+  font-size: 1.05em;
+  padding: 6px 4px 0 4px;
+}
+
+.fqp-chip {
+  border-radius: 99px;
+  padding: 7px 14px;
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+.fqp-chip:hover,
+.fqp-chip:focus {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+/* pages */
+.fqp-page-top {
+  spacing: 10px;
+  padding-bottom: 10px;
+}
+
+.fqp-page-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.fqp-back {
+  border-radius: 99px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.fqp-back:hover,
+.fqp-back:focus {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* calendar */
+.fqp-cal-nav {
+  spacing: 6px;
+  padding: 4px 0 8px 0;
+}
+
+.fqp-cal-month {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.fqp-cal-weekday {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85em;
+  padding: 4px 0;
+}
+
+.fqp-cal-day {
+  border-radius: 99px;
+  min-height: 2.05em;
+  margin: 1px;
+  text-align: center;
+}
+
+.fqp-cal-day:hover,
+.fqp-cal-day:focus {
+  background-color: rgba(255, 255, 255, 0.13);
+}
+
+.fqp-cal-other {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.fqp-cal-selected-label {
+  padding-top: 6px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* notifications box and borrowed calendar sections */
+.fqp-notify {
+  padding: 12px;
+}
+
+.fqp-cal-extra {
+  spacing: 8px;
+  padding-top: 8px;
+}
+
+/* notifications */
+.fqp-notif {
+  background-color: #383838;
+  border-radius: 16px;
+  padding: 12px;
+  spacing: 6px;
+}
+
+.fqp-notif-stack {
+  height: 7px;
+  background-color: #2e2e2e;
+  border-radius: 0 0 12px 12px;
+}
+
+.fqp-notif-app,
+.fqp-notif-time,
+.fqp-notif-count {
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.fqp-notif-app {
+  font-weight: bold;
+}
+
+.fqp-notif-title {
+  font-weight: bold;
+}
+
+.fqp-notif-body {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.fqp-notif-close {
+  border-radius: 99px;
+  padding: 4px;
+}
+
+.fqp-notif-open {
+  border-radius: 8px;
+}
+
+.fqp-clear {
+  margin-top: 10px;
+}
+
+/* light style */
+.fqp-light .fqp-pill,
+.fqp-light .fqp-chip,
+.fqp-light .fqp-back {
   background-color: rgba(0, 0, 0, 0.07);
 }
 
 .fqp-light .fqp-pill:hover,
-.fqp-light .fqp-pill:focus {
+.fqp-light .fqp-pill:focus,
+.fqp-light .fqp-chip:hover,
+.fqp-light .fqp-chip:focus,
+.fqp-light .fqp-back:hover,
+.fqp-light .fqp-back:focus {
   background-color: rgba(0, 0, 0, 0.12);
 }
 
 .fqp-light .fqp-avatar {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.fqp-light .fqp-cal-weekday,
+.fqp-light .fqp-cal-selected-label {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.fqp-light .fqp-cal-other {
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.fqp-light .fqp-cal-day:hover,
+.fqp-light .fqp-cal-day:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.fqp-light .fqp-notif {
+  background-color: #e2e2e2;
+}
+
+.fqp-light .fqp-notif-stack {
+  background-color: #cfcfcf;
+}
+
+.fqp-light .fqp-notif-app,
+.fqp-light .fqp-notif-time,
+.fqp-light .fqp-notif-count {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.fqp-light .fqp-notif-body {
+  color: rgba(0, 0, 0, 0.78);
 }

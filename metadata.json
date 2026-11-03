@@ -1,10 +1,10 @@
 {
   "uuid": "4ever-quick-panel@4ever-quick-panel.stradios",
   "name": "4ever Quick Panel",
-  "description": "A rounder, accent-colored look for GNOME's quick settings panel, with switches to hide the tiles and sliders you do not use.",
+  "description": "A rounder, accent-colored look for GNOME's quick settings panel, with a Shortcuts row, an in-panel calendar and pages, and switches to hide the tiles and sliders you do not use.",
   "shell-version": ["50", "51"],
-  "version": 1,
-  "version-name": "0.1",
+  "version": 2,
+  "version-name": "0.2",
   "url": "https://github.com/Stradios/4ever-quick-panel",
   "settings-schema": "org.gnome.shell.extensions.4ever-quick-panel"
 }

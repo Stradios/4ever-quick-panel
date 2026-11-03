@@ -15,10 +15,25 @@
       <default>24</default>
       <summary>Panel corner radius in pixels</summary>
     </key>
-    <key name="columns" type="i">
+    <key name="tile-radius" type="i">
+      <range min="0" max="30"/>
+      <default>14</default>
+      <summary>Corner radius of the tiles in pixels</summary>
+    </key>
+    <key name="tile-height" type="i">
+      <range min="0" max="96"/>
+      <default>0</default>
+      <summary>Tile height in pixels, 0 adapts to the screen and text size</summary>
+    </key>
+    <key name="width" type="i">
+      <range min="0" max="1400"/>
+      <default>0</default>
+      <summary>Panel width in pixels, 0 adapts to the screen and text size</summary>
+    </key>
+    <key name="tile-columns" type="i">
       <range min="2" max="3"/>
-      <default>2</default>
-      <summary>Tiles per row (3 is experimental)</summary>
+      <default>3</default>
+      <summary>Tiles per row</summary>
     </key>
     <key name="show-header" type="b">
       <default>true</default>
@@ -28,9 +43,45 @@
       <default>true</default>
       <summary>Show the date and time at the bottom</summary>
     </key>
+    <key name="show-headings" type="b">
+      <default>true</default>
+      <summary>Show the Quick Controls and Shortcuts headings</summary>
+    </key>
+    <key name="show-shortcuts" type="b">
+      <default>true</default>
+      <summary>Show the Shortcuts row</summary>
+    </key>
+    <key name="inline-pages" type="b">
+      <default>true</default>
+      <summary>Open a tile's arrow as a page inside the panel</summary>
+    </key>
+    <key name="show-notifications" type="b">
+      <default>true</default>
+      <summary>Show notifications in a box above the panel</summary>
+    </key>
+    <key name="keep-transient" type="b">
+      <default>true</default>
+      <summary>Keep short-lived notifications (like the screenshot one) in the list</summary>
+    </key>
+    <key name="clock-opens-panel" type="b">
+      <default>true</default>
+      <summary>Clicking the date and time on the taskbar opens the panel's calendar instead of GNOME's</summary>
+    </key>
+    <key name="prefs-page" type="s">
+      <default>''</default>
+      <summary>Settings page to open next (written by the extension, cleared by the settings window)</summary>
+    </key>
+    <key name="week-start" type="s">
+      <default>'monday'</default>
+      <summary>First day of the week in the calendar (monday, sunday or saturday)</summary>
+    </key>
+    <key name="shortcuts" type="as">
+      <default>['Settings|preferences-system-symbolic|org.gnome.Settings.desktop', 'Files|system-file-manager-symbolic|org.gnome.Nautilus.desktop']</default>
+      <summary>Shortcuts, each as name|icon|command</summary>
+    </key>
     <key name="known-items" type="as">
       <default>[]</default>
-      <summary>Tiles and sliders found in the panel (written by the extension)</summary>
+      <summary>Tiles and sliders found in the panel (written by the extension), each as id|available|name</summary>
     </key>
     <key name="hidden-items" type="as">
       <default>[]</default>

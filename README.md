@@ -1,4 +1,5 @@
 # 4ever Quick Panel
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M8K423K344)
 
 A small add-on for GNOME Shell that gives the quick settings panel (network, volume, brightness and the other
 tiles) a rounder, accent-colored look, and lets you hide the tiles and sliders you never use.
